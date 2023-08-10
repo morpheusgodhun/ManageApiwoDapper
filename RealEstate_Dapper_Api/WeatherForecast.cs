@@ -1,4 +1,4 @@
-namespace RealEstate_Dapper_Api {
+namespace ManageApiwoDapper_Api {
     public class WeatherForecast {
         public DateOnly Date { get; set; }
 

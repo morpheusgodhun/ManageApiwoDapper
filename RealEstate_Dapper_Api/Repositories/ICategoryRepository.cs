@@ -1,6 +1,6 @@
-﻿using RealEstate_Dapper_Api.CategoryDtos;
+﻿using ManageApiwoDapper_Api.CategoryDtos;
 
-namespace RealEstate_Dapper_Api.Repositories {
+namespace ManageApiwoDapper_Api.Repositories {
     public interface ICategoryRepository {
         Task<List<ResultCategoryDto>> GetAllCategoryAsync();
         void CreateCategory(CreateCategoryDto categoryDto);

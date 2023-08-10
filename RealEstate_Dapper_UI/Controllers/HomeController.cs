@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RealEstate_Dapper_UI.Models;
+using ManageApiwoDapper_UI.Models;
 using System.Diagnostics;
 
-namespace RealEstate_Dapper_UI.Controllers {
+namespace ManageApiwoDapper_UI.Controllers {
     public class HomeController : Controller {
         private readonly ILogger<HomeController> _logger;
 
