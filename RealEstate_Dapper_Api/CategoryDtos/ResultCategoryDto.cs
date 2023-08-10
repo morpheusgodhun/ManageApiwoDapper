@@ -1,4 +1,4 @@
-﻿namespace ManageApiwoDapper_Api.CategoryDtos {
+﻿namespace RealEstate_Dapper_Api.CategoryDtos {
     public class ResultCategoryDto {
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }

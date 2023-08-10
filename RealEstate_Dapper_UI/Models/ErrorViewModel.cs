@@ -1,4 +1,4 @@
-namespace ManageApiwoDapper_UI.Models {
+namespace RealEstate_Dapper_UI.Models {
     public class ErrorViewModel {
         public string? RequestId { get; set; }
 

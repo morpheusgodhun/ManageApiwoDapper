@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ManageApiwoDapper_UI.Controllers {
+namespace RealEstate_Dapper_UI.Controllers {
     public class ProfileController : Controller {
         public IActionResult Index() {
             return View();

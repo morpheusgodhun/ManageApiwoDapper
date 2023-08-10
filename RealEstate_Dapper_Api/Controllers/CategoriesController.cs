@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ManageApiwoDapper_Api.CategoryDtos;
-using ManageApiwoDapper_Api.Repositories;
+using RealEstate_Dapper_Api.CategoryDtos;
+using RealEstate_Dapper_Api.Repositories;
 
-namespace ManageApiwoDapper_Api.Controllers {
+namespace RealEstate_Dapper_Api.Controllers {
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase {
