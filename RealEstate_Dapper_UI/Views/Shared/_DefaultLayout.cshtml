@@ -12,86 +12,7 @@ Author URL: http://w3layouts.com
   <body>
 
 <!--header-->
-<header id="site-header" class="fixed-top">
-  <div class="container">
-      <nav class="navbar navbar-expand-lg stroke px-0">
-          <h1> <a class="navbar-brand" href="index.html">
-                  <span class="fa fa-home"></span> Istanbul Logistic
-              </a></h1>
-          <!-- if logo is image enable this   
-  <a class="navbar-brand" href="#index.html">
-      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-  </a> -->
-          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-lg-5 mr-auto">
-                  <li class="nav-item @@home__active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item @@listing__active">
-                      <a class="nav-link" href="listing.html">Listing</a>
-                  </li>
-                  <li class="nav-item dropdown @@property__active">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Property <span class="fa fa-angle-down"></span>
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item @@ps__active" href="property-single.html">Single property</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown active">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Pages <span class="fa fa-angle-down"></span>
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item @@about__active" href="about.html">About us</a>
-                          <a class="dropdown-item active" href="contact.html">Contact us</a>
-                      </div>
-                  </li>
-              </ul>
-              <div class="top-quote mt-lg-0">
-                  <a href="#buytheme" class="btn btn-style btn-primary"><span class="fa fa-home"></span> Add
-                      listiing</a>
-              </div>
-              <!--/search-right-->
-              <div class="search mx-3">
-                  <input class="search_box" type="checkbox" id="search_box">
-                  <label class="fa fa-search" for="search_box"></label>
-                  <div class="search_form">
-                      <form action="error.html" method="GET">
-                          <input type="text" placeholder="Search"><input type="submit" value="search">
-                      </form>
-                  </div>
-              </div>
-              <!--//search-right-->
-          </div>
-
-          <!-- toggle switch for light and dark theme -->
-          <div class="mobile-position">
-              <nav class="navigation">
-                  <div class="theme-switch-wrapper">
-                      <label class="theme-switch" for="checkbox">
-                          <input type="checkbox" id="checkbox">
-                          <div class="mode-container">
-                              <i class="gg-sun"></i>
-                              <i class="gg-moon"></i>
-                          </div>
-                      </label>
-                  </div>
-              </nav>
-          </div>
-          <!-- //toggle switch for light and dark theme -->
-      </nav>
-  </div>
-</header>
+    @await Component.InvokeAsync("_NavbarViewComponentPartial")
 <!--/header-->
 <section class="w3l-about-breadcrumb">
     <div class="breadcrumb-bg breadcrumb-bg-about pt-5">
@@ -118,15 +39,14 @@ Author URL: http://w3layouts.com
           <div class="column">
             <a href="#url" class="link"><span class="fa fa-phone"></span></a>
             <a href="#url" class="title-small">YARDIM AL !</a>
-            <h4>Bize ulaşım sağlayıp detaylı bilgi almak ister misin</h4>
+            <h4>Bize ulaşım sağlayıp detaylı bilgi al</h4>
             <a href="tel:+1-2345-678-11">
               <p class="contact-phone mt-2"><span class="lnr lnr-phone-handset"></span> +1-2345-678-11
               </p>
             </a>
           </div>
           <div class="column mt-lg-0 mt-md-5">
-            <h4 class="mb-1">Bülten için kayıt ol</h4>
-            <p>and get latest news and updates</p>
+            <h4 class="mb-1">Bülten için kayıt ol</h4>          
             <form action="#" class="subscribe-form mt-4" method="post">
               <div class="form-group">
                 <input type="email" name="subscribe" placeholder="Email adresini yaz" required="">
@@ -134,7 +54,7 @@ Author URL: http://w3layouts.com
               </div>
             </form>
             <ul class="footers-17_social">
-              <h4 class="d-inline mr-4">Follow us</h4>
+              <h4 class="d-inline mr-4">Bizi Takip Et</h4>
               <li><a href="#url" class="twitter"><span class="fa fa-twitter"></span></a></li>
               <li><a href="#url" class="facebook"><span class="fa fa-facebook"></span></a></li>
               <li><a href="#url" class="linkedin"><span class="fa fa-linkedin"></span></a></li>
